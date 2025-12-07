@@ -1,0 +1,9 @@
+# python
+__pycache__/
+*.pyc
+
+# env / secrets
+.env
+
+# data files - don't upload large data files
+data/raw/
