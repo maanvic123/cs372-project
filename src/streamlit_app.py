@@ -17,7 +17,7 @@ load_dotenv(find_dotenv())
 
 # ----- config -----
 # set file paths
-FAISS_INDEX_PATH = Path("/Users/maanvic123/Downloads/faiss_ivf_flat.index")
+FAISS_INDEX_PATH = os.getenv("FAISS_INDEX_PATH")
 TRACK_IDS_PATH = Path("data/processed/track_ids.npy")
 
 # set embedding model and OpenAI/Spotify API keys
@@ -29,7 +29,7 @@ _spotify_token = {"access_token" : None, "expires_at" : 0}
 
 
 # ----- streamlit page config -----
-st.set_page_config(page_title="CS 372 Final Project", layout="centered")
+st.set_page_config(page_title="VibeCheck", layout="centered")
 
 # ----- streamlit UI -----
 # function to encode local file with base64 for global access
