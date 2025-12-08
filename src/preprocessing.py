@@ -62,7 +62,7 @@ def preprocess():
     df = pd.read_csv(INPUT_CSV)
     LOG.info("loaded %d rows", len(df))
 
-    # clean data - remove rows with duplicate track_ids or missing info 
+    # clean data - remove rows with duplicate track_ids or missing info (track_id, track_name, artist_info)
     before = len(df)
     df = df.drop_duplicates(subset=["track_id"])
     LOG.info("dropped %d duplicate track_id rows", before-len(df))
