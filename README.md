@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ````
 
 ### **2. Download FAISS index file**
-Download `faiss_ivf_flat.index` (7GB) from Box: *(Insert link here)*
+Download `faiss_ivf_flat.index` (7GB): [FAISS Index Download (Box)](https://duke.box.com/s/mb95gtp3egrfdvu7i874b9dgt1ubxaiy)
 
 ### **3. Create `.env` file**
 Copy:

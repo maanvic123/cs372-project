@@ -6,14 +6,14 @@ pip install -r requirements.txt
 ````
 
 ### **2. Download FAISS index file**
-Download `faiss_ivf_flat.index` (7GB) from Box: *(Insert link here)*
+Download `faiss_ivf_flat.index` (7GB): [FAISS Index Download (Box)](https://duke.box.com/s/mb95gtp3egrfdvu7i874b9dgt1ubxaiy)
 
 ### **3. Create `.env` file**
 Copy:
 ```bash
 cp .env.example .env
 ```
-Copy and paste the following information into `.env` file, and replace *FAISS_INDEX_PATH* with filepath from downloaded file.
+Copy and paste the following information into new `.env` file. Replace OpenAI and Spotify credentials with values from Gradescope submission, and replace *FAISS_INDEX_PATH* with your filepath from downloaded file.
 ```
 OPENAI_API_KEY=<copy from gradescope>
 SPOTIFY_CLIENT_ID=<copy from gradescope>
