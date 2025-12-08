@@ -12,21 +12,26 @@ VibeCheck is an interactive music recommendation system that integrates preproce
 # 📦 File Structure
 ```
 ├── src/
+│   ├── images/                     # folder with images
 │   ├── streamlit_app.py            # main Streamlit UI + FAISS index search logic
 │   ├── preprocessing.py            # preprocessing pipeline for features + track IDs
-│   ├── disco.png                   # image for UI
-│   ├── final_project.ipynb         # embedding/index generation, evaluation
+│   ├── final_project.ipynb         # embedding/index generation
+│   ├── evaluation.ipynb            # evaluation + discussion of model performance
 │
 ├── data/
 │   ├── raw/raw_spotify_data.csv    # raw Kaggle dataset (too large for git)
 │   ├── processed/features.npy      # feature matrix
 │   ├── processed/scaler.pkl        # StandardScaler info
-│   ├── processed/track_ids.npy     # 1D array of track_IDs
+│   ├── processed/track_ids.npy     # 1D array of Spotify track IDs
 │
+├── .env.example                    # .env file to copy during setup
 ├── requirements.txt
 ├── README.md
 ├── SETUP.md
 └── ATTRIBUTION.md
+
+├── Duke Box
+│   ├── faiss_ivf_flat.index        # FAISS index file generated in colab
 ````
 
 
