@@ -3,7 +3,6 @@ import os
 import time
 from typing import List
 
-import spotipy
 import streamlit as st
 import numpy as np
 import pandas as pd
