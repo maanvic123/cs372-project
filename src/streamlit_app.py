@@ -37,7 +37,7 @@ def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-disco_ball_base64 = get_base64_image("/Users/maanvic123/Downloads/disco.png")
+disco_ball_base64 = get_base64_image(Path("data/disco.png"))
 
 if 'page' not in st.session_state:
     st.session_state.page = 'search'
