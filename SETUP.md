@@ -25,3 +25,8 @@ FAISS_INDEX_PATH=/your/downloaded/path/to/faiss_ivf_flat.index
 ```
 streamlit run src/streamlit_app.py
 ```
+
+### **5. Search for songs by vibe**
+1. On Streamlit UI, enter a few words about your mood or current vibe, and press enter.
+2. Check out the recommended songs!
+3. Click "search again" to try again.

@@ -38,35 +38,43 @@ pip install -r requirements.txt
 ````
 
 ### **2. Download FAISS index file**
-Download faiss_ivf_flat.index (7GB) from Box: *(Insert your link here)*
+Download `faiss_ivf_flat.index` (7GB) from Box: *(Insert link here)*
 
 ### **3. Create `.env` file**
 Copy:
 ```bash
 cp .env.example .env
 ```
-Then edit `.env` with your filepath to downloaded faiss_ivf_flat.index:
+Copy and paste the following information into `.env` file, and replace *FAISS_INDEX_PATH* with filepath from downloaded file.
 ```
-FAISS_INDEX_PATH=path/to/downloaded/faiss_ivf_flat.index
+OPENAI_API_KEY=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
+SPOTIFY_CLIENT_ID=1a16f34fb6824359b976119b8c8450cc
+SPOTIFY_CLIENT_SECRET=d32daae82d8f4a16b1c0a10b32e41000
+FAISS_INDEX_PATH=/your/downloaded/path/to/faiss_ivf_flat.index
 ```
 
-### **4. Run the application**
-```bash
+### **4. Run app with Streamlit**
+```
 streamlit run src/streamlit_app.py
 ```
+
+### **5. Search for songs by vibe**
+Enter a few words about your mood or current vibe, and press enter.
+![VibeCheck Home Page](src/UI.png "VibeCheck Home Page")
+
 
 
 # 🎥 Demo Video Links
 
 ### **1. High-Level Overview Demo**
-*(Insert your link here)*
+*(Insert link here)*
 
 ### **2. Technical Walkthrough / Code Explanation**
-*(Insert your link here)*
+*(Insert link here)*
 
 # 📊 Evaluation
-Evaluation results and discussion
-are included in the **Evaluation** section of `src/final_project.ipynb`.
+Detailed evaluation results and discussion are included in `src/evaluation.ipynb`. The plot below shows the results of three example queries and their corresponding recommended songs in a 2D embedding space.
+![Evaluation PCA Plot](src/pcaplot.png "Evaluation PCA Plot")
 
 
 # 👥 Individual Contributions
