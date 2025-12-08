@@ -60,7 +60,7 @@ streamlit run src/streamlit_app.py
 
 ### **5. Search for songs by vibe**
 Enter a few words about your mood or current vibe, and press enter.
-![VibeCheck Home Page](src/UI.png "VibeCheck Home Page")
+![VibeCheck Home Page](src/images/UI.png "VibeCheck Home Page")
 
 
 
@@ -74,7 +74,7 @@ Enter a few words about your mood or current vibe, and press enter.
 
 # 📊 Evaluation
 Detailed evaluation results and discussion are included in `src/evaluation.ipynb`. The plot below shows the results of three example queries and their corresponding recommended songs in a 2D embedding space.
-![Evaluation PCA Plot](src/pcaplot.png "Evaluation PCA Plot")
+![Evaluation PCA Plot](src/images/pcaplot.png "Evaluation PCA Plot")
 
 
 # 👥 Individual Contributions

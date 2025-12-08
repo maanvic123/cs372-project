@@ -38,7 +38,7 @@ def get_base64_image(image_path):
         return base64.b64encode(img_file.read()).decode()
 
 BASE_DIR = Path(__file__).resolve().parent
-DISCO_PATH = BASE_DIR / "disco.png"
+DISCO_PATH = BASE_DIR / "images" / "disco.png"
 disco_ball_base64 = get_base64_image(DISCO_PATH)
 
 if 'page' not in st.session_state:
