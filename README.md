@@ -1,12 +1,13 @@
 # README.md
 
 # 🎶 VibeCheck: An AI-Powered Music Recommendation System
-VibeCheck is an interactive music recommendation system that integrates preprocessing, ML embeddings, vector search, and UI in one unified system. Users can find songs using short vibe or mood descriptions (e.g. "motivational chill study", "roadtrip singalong", "energetic evening run"). User-inputted text is embedded with an OpenAI embedding model, compared against a large FAISS vector index built from 1 million songs + audio features from Spotify, and the top three recommended tracks are displayed with Spotify embeds for easy listening.
+VibeCheck is an interactive music recommendation system for users looking to expand their music tastes, soundtrack a certain vibe, or find similar songs without needing to know genres, artists, or music theory. People often just know the mood they want, but maybe not which songs fit that mood. VibeCheck bridges that gap by helping users find music that meaningfully matches their emotional context. With just a short prompt, VibeCheck will search and recommend three songs from a database of over 1 million songs.
 
 # 🚀 What It Does
-1. Embeds input user text using **text-embedding-3-small** (OpenAI)
-2. Searches a FAISS IVF index containing song embeddings for the three most similar vectors.
-3. Returns the top recommended songs as Spotify song previews embedding in the UI.
+1. User inputs a short vibe or mood description (e.g. "motivational chill study", "roadtrip singalong", "energetic evening run").
+2. User text input is embedded using OpenAI embedding model **text-embedding-3-small**.
+3. System searches FAISS IVFF (Facebook AI Similarity Search, Inverted File Indexing, Flat) index that contains song embeddings to find the top three most similar songs to the user input.
+4. The top recommended songs are displayed as Spotify song previews.
 
 
 # 📦 File Structure
@@ -36,17 +37,21 @@ VibeCheck is an interactive music recommendation system that integrates preproce
 
 
 # ⚙️ Quick Start
+### **1. Clone repository**
+```bash
+git clone https://github.com/maanvic123/cs372-project.git
+cd cs372-project
+````
 
-### **1. Install dependencies**
+### **2. Install dependencies**
 ```bash
 pip install -r requirements.txt
 ````
 
-### **2. Download FAISS index file**
+### **3. Download FAISS index file**
 Download `faiss_ivf_flat.index` (7GB): [FAISS Index Download (Box)](https://duke.box.com/s/mb95gtp3egrfdvu7i874b9dgt1ubxaiy)
 
-### **3. Create `.env` file**
-Copy:
+### **4. Create `.env` file**
 ```bash
 cp .env.example .env
 ```
@@ -58,12 +63,12 @@ SPOTIFY_CLIENT_SECRET=<copy from gradescope>
 FAISS_INDEX_PATH=/your/downloaded/path/to/faiss_ivf_flat.index
 ```
 
-### **4. Run app with Streamlit**
+### **5. Run app with Streamlit**
 ```
 streamlit run src/streamlit_app.py
 ```
 
-### **5. Search for songs by vibe**
+### **6. Search for songs by vibe**
 Enter a few words about your mood or current vibe, and press enter.
 ![VibeCheck Home Page](src/images/UI.png "VibeCheck Home Page")
 
