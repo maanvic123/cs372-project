@@ -77,10 +77,10 @@ Enter a few words about your mood or current vibe, and press enter.
 # 🎥 Demo Video Links
 
 ### **1. High-Level Overview Demo**
-*(Insert link here)*
+https://duke.zoom.us/rec/share/DYV3RlpbKLZ5IOYdO8tvA66as0q8GoD7bwTVpxLGglB0SpGiMJROxN4-hkSfApv_.6GQPhCziEc7clYZs?startTime=1765308578000
 
 ### **2. Technical Walkthrough / Code Explanation**
-*(Insert link here)*
+https://duke.zoom.us/rec/share/DYV3RlpbKLZ5IOYdO8tvA66as0q8GoD7bwTVpxLGglB0SpGiMJROxN4-hkSfApv_.6GQPhCziEc7clYZs?startTime=1765310141000
 
 # 📊 Evaluation
 Detailed evaluation results and discussion are included in `src/evaluation.ipynb`. The plot below shows the results of three example queries and their corresponding recommended songs in a 2D embedding space.
